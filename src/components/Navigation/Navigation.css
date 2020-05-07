@@ -1,0 +1,39 @@
+.Navigation {
+    background-color: red;
+    margin-top: -20px;
+}
+
+.Nav {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.LeftNav {
+    display: flex;
+}
+
+.LeftNav li {
+    list-style: none;
+    margin: 20px;
+}
+
+.LeftNav li a {
+    text-decoration: none;
+}
+
+.RightNav {
+    display: flex;
+}
+
+.RightNav li {
+    list-style: none;
+    margin: 20px;
+}
+
+.RightNav li a {
+    text-decoration: none;
+}
+
+

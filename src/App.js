@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import classes from './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
 
 class App extends Component {
   render() {
     return (
       <div className={classes.App}>
-          <p>Hello World</p>
+        <BrowserRouter>
+          <Layout />
+        </BrowserRouter>
       </div>
     );
   }
