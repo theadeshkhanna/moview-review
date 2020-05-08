@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { observer, inject } from 'mobx-react';
+import classes from './SignIn.css';
 
 @observer
 @inject('AuthStore')
@@ -15,13 +16,9 @@ class SignIn extends Component {
     render() {
         return (
             <div>
-                <br />
-                <br />
-                <form onSubmit={(e) => this.handleSubmit(e)}>
-                    <input type="text" placeholder="email" name="email"/>
-                    <br />
-                    <input type="password" placeholder="password" name="password"/>
-                    <br />
+                <form onSubmit={(e) => this.handleSubmit(e)} className={classes.SignIn}>
+                    <input type="text" placeholder="Email" name="email"/>
+                    <input type="password" placeholder="Password" name="password"/>
                     <button>submit</button>
                 </form>
             </div>

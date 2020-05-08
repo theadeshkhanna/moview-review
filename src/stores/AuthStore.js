@@ -1,6 +1,5 @@
 import { observable,action } from "mobx";
 import axios from '../axios-instance';
-import body from "eslint-plugin-jsx-a11y/lib/util/implicitRoles/body";
 
 class AuthStore {
     @observable email = '';
