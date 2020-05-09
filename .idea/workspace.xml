@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8dfec7b3-ce73-488b-8284-d4efbef85333" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stores/AuthStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/AuthStore.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +57,7 @@
       <workItem from="1588859983451" duration="7896000" />
       <workItem from="1588867946002" duration="3000" />
       <workItem from="1588971401072" duration="6221000" />
-      <workItem from="1589031483075" duration="3187000" />
+      <workItem from="1589031483075" duration="7522000" />
     </task>
     <servers />
   </component>
@@ -66,10 +69,10 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="699" y="344" key="#com.intellij.fileTypes.FileTypeChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1588782346688" />
-    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog" timestamp="1589034520292">
+    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog" timestamp="1589039639029">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1589034520292" />
+    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1589039639029" />
     <state x="486" y="174" key="SettingsEditor" timestamp="1588862624761">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>

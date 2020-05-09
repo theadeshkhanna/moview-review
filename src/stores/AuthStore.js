@@ -5,8 +5,9 @@ class AuthStore {
     @observable email = '';
     @observable password = '';
     @observable auth = false;
+    @observable loading = true;
 
-    @action signIn = () => {
+    @action signIn = (props) => {
 
         const payload = {
           "email" : this.email,
@@ -15,20 +16,29 @@ class AuthStore {
 
         axios.post('/login', payload)
             .then(res => {
+
                 localStorage.setItem('token', res.data.token);
+
                 this.auth = true;
+                this.loading = true;
+
+                props.history.push('/dashboard');
             }).catch(res => {
                 console.log(res.data);
         });
     };
 
-    @action signOut = () => {
+    @action signOut = (props) => {
 
         localStorage.removeItem('token');
 
         axios.post('/logout')
             .then(res => {
-                console.log('logout success');
+
+                this.auth = false;
+                this.loading = true;
+
+                props.history.push('/');
             }).catch(res => {
                 console.log(res.data);
         });
