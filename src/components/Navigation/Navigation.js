@@ -3,19 +3,15 @@ import { Link } from 'react-router-dom';
 import classes from './Navigation.css';
 import { observer, inject } from 'mobx-react';
 
-@observer
 @inject('AuthStore')
+@observer
 class Navigation extends Component {
-
-    handleSignSwitch = () => {
-        return !!localStorage.getItem('token');
-    };
 
     render() {
 
         let navi = null;
 
-        if (this.handleSignSwitch()) {
+        if (this.props.state) {
             navi = (
                 <ul className={classes.RightNav}>
                     <li><Link to="/">Sign Out</Link></li>;

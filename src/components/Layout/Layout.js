@@ -4,13 +4,16 @@ import Landing from '../Landing/Landing';
 import Dashboard from "../Dashboard/Dashboard";
 import { Switch, Route} from 'react-router-dom';
 import SignIn from "../Auth/SignIn/SignIn";
+import { observer, inject } from 'mobx-react';
 
+@inject('AuthStore')
+@observer
 class Layout extends Component {
 
     render() {
         return(
             <Fragment>
-                <Navigation />
+                <Navigation state={this.props.AuthStore.auth} />
                 <Switch>
                     <Route path="/" exact component={Landing} />
                     <Route path="/dashboard" exact component={Dashboard} />

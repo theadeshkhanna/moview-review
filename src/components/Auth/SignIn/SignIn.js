@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import { observer, inject } from 'mobx-react';
 import classes from './SignIn.css';
 
-@observer
 @inject('AuthStore')
+@observer
 class SignIn extends Component {
 
     handleSubmit(e) {
