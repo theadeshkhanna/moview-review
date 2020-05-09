@@ -14,10 +14,9 @@ class AuthStore {
 
         axios.post('/login', payload)
             .then(res => {
-                console.log(res);
+                localStorage.setItem('token', res.data.token);
             }).catch(res => {
-                console.log(payload);
-                console.log(res);
+                console.log(res.data);
         });
     }
 }

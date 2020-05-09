@@ -8,9 +8,12 @@ class SignIn extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
+
         this.props.AuthStore.email = e.target.email.value;
         this.props.AuthStore.password = e.target.password.value;
         this.props.AuthStore.signIn();
+        e.target.email.value = '';
+        e.target.password.value = '';
     }
 
     render() {
