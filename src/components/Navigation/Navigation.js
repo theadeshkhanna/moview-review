@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import classes from './Navigation.css';
-import { observer, inject } from 'mobx-react';
 
-@inject('AuthStore')
-@observer
 class Navigation extends Component {
+
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        if (nextProps.state) {
+            return true;
+        }
+    }
 
     render() {
 
@@ -14,7 +17,7 @@ class Navigation extends Component {
         if (this.props.state) {
             navi = (
                 <ul className={classes.RightNav}>
-                    <li><Link to="/">Sign Out</Link></li>;
+                    <li onClick={this.props.signOut}>Sign Out</li>;
                 </ul>
             );
         } else {

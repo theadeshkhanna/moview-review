@@ -29,6 +29,8 @@
 .RightNav li {
     list-style: none;
     margin: 25px;
+    color: #F27B69;
+    cursor: pointer;
 }
 
 .RightNav li a {

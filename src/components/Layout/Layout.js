@@ -12,9 +12,12 @@ import SignUp from "../Auth/SignUp/SignUp";
 class Layout extends Component {
 
     render() {
+
         return(
             <Fragment>
-                <Navigation state={this.props.AuthStore.auth} />
+                <Navigation
+                    state={this.props.AuthStore.auth}
+                    signOut={this.props.AuthStore.signOut} />
                 <Switch>
                     <Route path="/" exact component={Landing} />
                     <Route path="/dashboard" exact component={Dashboard} />

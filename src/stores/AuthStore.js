@@ -46,7 +46,7 @@ class AuthStore {
         });
     };
 
-    @action signOut = (props) => {
+    @action signOut = () => {
 
         localStorage.removeItem('token');
 
@@ -56,7 +56,6 @@ class AuthStore {
                 this.auth = false;
                 this.loading = true;
 
-                props.history.push('/');
             }).catch(res => {
                 console.log(res.data);
         });
