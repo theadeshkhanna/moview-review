@@ -48,9 +48,11 @@ class AuthStore {
 
     @action signOut = () => {
 
-        localStorage.removeItem('token');
-
-        axios.post('/logout')
+        axios.post('/logout', {}, {
+            'headers' : {
+                'Authorization' : 'Bearer' + localStorage.getItem('token')
+            }
+        })
             .then(res => {
 
                 this.auth = false;
@@ -59,6 +61,8 @@ class AuthStore {
             }).catch(res => {
                 console.log(res.data);
         });
+
+        localStorage.removeItem('token');
     };
 
     @action isAuthenticated = () => {

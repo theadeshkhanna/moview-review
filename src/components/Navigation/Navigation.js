@@ -5,7 +5,7 @@ import classes from './Navigation.css';
 class Navigation extends Component {
 
     shouldComponentUpdate(nextProps, nextState, nextContext) {
-        if (nextProps.state) {
+        if (nextProps.state !== this.props.state) {
             return true;
         }
     }
@@ -28,6 +28,8 @@ class Navigation extends Component {
                 </ul>
             );
         }
+
+        console.log(this.props.state);
 
         return (
             <div className={classes.Navigation}>
