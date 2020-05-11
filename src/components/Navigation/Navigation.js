@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import classes from './Navigation.css';
+import { withRouter } from "react-router-dom";
 
 class Navigation extends Component {
 
@@ -46,4 +47,4 @@ class Navigation extends Component {
     }
 }
 
-export default Navigation;
+export default withRouter(Navigation);

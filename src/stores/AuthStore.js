@@ -46,7 +46,7 @@ class AuthStore {
         });
     };
 
-    @action signOut = () => {
+    @action signOut = (props) => {
 
         axios.post('/logout', {}, {
             'headers' : {
@@ -57,6 +57,8 @@ class AuthStore {
 
                 this.auth = false;
                 this.loading = true;
+
+                props.history.push('/');
 
             }).catch(res => {
                 console.log(res.data);

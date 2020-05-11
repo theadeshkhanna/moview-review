@@ -17,7 +17,7 @@ class Layout extends Component {
             <Fragment>
                 <Navigation
                     state={this.props.AuthStore.auth}
-                    signOut={this.props.AuthStore.signOut} />
+                    signOut={() => this.props.AuthStore.signOut()} />
                 <Switch>
                     <Route path="/" exact component={Landing} />
                     <Route path="/dashboard" exact component={Dashboard} />
