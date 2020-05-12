@@ -15,7 +15,7 @@ class Navigation extends Component {
         if (this.props.AuthStore.auth) {
             navi = (
                 <ul className={classes.RightNav}>
-                    <li onClick={this.props.AuthStore.signOut(this.props)}>Sign Out</li>;
+                    <li onClick={() => this.props.AuthStore.signOut(this.props)}>Sign Out</li>;
                 </ul>
             );
         } else {

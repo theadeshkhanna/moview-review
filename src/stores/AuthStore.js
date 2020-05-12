@@ -7,6 +7,7 @@ class AuthStore {
     @observable password = '';
     @observable auth = false;
     @observable loading = true;
+    @observable loaded = false;
 
     @action signUp = (props) => {
 
@@ -25,11 +26,13 @@ class AuthStore {
         });
     };
 
-    @action signIn = (props) => {
+    @action signIn = (e, props) => {
+
+        e.preventDefault();
 
         const payload = {
-          "email" : this.email,
-          "password" : this.password
+          "email" : e.target.email.value,
+          "password" : e.target.password.value
         };
 
         axios.post('/login', payload)
@@ -38,7 +41,8 @@ class AuthStore {
                 localStorage.setItem('token', res.data.token);
 
                 this.auth = true;
-                this.loading = true;
+                this.loading = false;
+                this.loaded = true;
 
                 props.history.push('/dashboard');
             }).catch(res => {
@@ -56,7 +60,7 @@ class AuthStore {
             .then(res => {
 
                 this.auth = false;
-                this.loading = true;
+                this.loading = false;
 
                 props.history.push('/');
 
