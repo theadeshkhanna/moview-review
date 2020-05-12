@@ -2,23 +2,20 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import classes from './Navigation.css';
 import { withRouter } from "react-router-dom";
+import { observer, inject } from 'mobx-react';
 
+@inject('AuthStore')
+@observer
 class Navigation extends Component {
-
-    shouldComponentUpdate(nextProps, nextState, nextContext) {
-        if (nextProps.state !== this.props.state) {
-            return true;
-        }
-    }
 
     render() {
 
         let navi = null;
 
-        if (this.props.state) {
+        if (this.props.AuthStore.auth) {
             navi = (
                 <ul className={classes.RightNav}>
-                    <li onClick={this.props.signOut}>Sign Out</li>;
+                    <li onClick={this.props.AuthStore.signOut(this.props)}>Sign Out</li>;
                 </ul>
             );
         } else {
@@ -29,8 +26,6 @@ class Navigation extends Component {
                 </ul>
             );
         }
-
-        console.log(this.props.state);
 
         return (
             <div className={classes.Navigation}>
