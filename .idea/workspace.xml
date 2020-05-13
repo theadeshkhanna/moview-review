@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfec7b3-ce73-488b-8284-d4efbef85333" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hoc/Authentication.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Auth/PrivateRoute/Authenticate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/axios-instance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios-instance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Layout/Layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Layout/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hoc/Authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/PrivateRoute/AuthGuard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/AuthStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/AuthStore.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +45,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/container" />
+      <recent name="$PROJECT_DIR$/src/components/Auth/PrivateRoute" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -58,7 +69,8 @@
       <workItem from="1589031483075" duration="11578000" />
       <workItem from="1589119098922" duration="8568000" />
       <workItem from="1589215385017" duration="5040000" />
-      <workItem from="1589297033528" duration="9049000" />
+      <workItem from="1589297033528" duration="9285000" />
+      <workItem from="1589378871872" duration="4628000" />
     </task>
     <servers />
   </component>
@@ -70,10 +82,14 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="699" y="344" key="#com.intellij.fileTypes.FileTypeChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1588782346688" />
-    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog" timestamp="1589302757513">
+    <state x="730" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589382015013">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1589302757513" />
+    <state x="730" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1589382015013" />
+    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog" timestamp="1589385910870">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1589385910870" />
     <state x="486" y="174" key="SettingsEditor" timestamp="1588862624761">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>

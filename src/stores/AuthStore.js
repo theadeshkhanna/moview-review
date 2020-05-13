@@ -71,14 +71,6 @@ class AuthStore {
         localStorage.removeItem('token');
     };
 
-    @action isAuthenticated = () => {
-
-        if (localStorage.getItem('token')) {
-            return JSON.parse(localStorage.getItem('token'));
-        } else {
-            return false;
-        }
-    };
 }
 
 const store = new AuthStore();

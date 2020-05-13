@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from 'react';
-import Navigation from '../Navigation/Navigation';
-import Landing from '../Landing/Landing';
-import Dashboard from "../Dashboard/Dashboard";
+import Navigation from '../../components/Navigation/Navigation';
+import Landing from '../../components/Landing/Landing';
+import Dashboard from "../../components/Dashboard/Dashboard";
 import { Switch, Route} from 'react-router-dom';
-import SignIn from "../Auth/SignIn/SignIn";
+import SignIn from "../../components/Auth/SignIn/SignIn";
 import { observer, inject } from 'mobx-react';
-import SignUp from "../Auth/SignUp/SignUp";
-import Authenticate from "../../hoc/Authentication";
+import SignUp from "../../components/Auth/SignUp/SignUp";
+import Authenticate from "../../components/Auth/PrivateRoute/AuthGuard";
 
 @inject('AuthStore')
 @observer
