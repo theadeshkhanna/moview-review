@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfec7b3-ce73-488b-8284-d4efbef85333" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Auth/PrivateRoute/Authenticate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/axios-instance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios-instance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Layout/Layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hoc/Authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/PrivateRoute/AuthGuard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/PrivateRoute/AuthGuard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/PrivateRoute/AuthGuard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/PrivateRoute/Authenticate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/PrivateRoute/Authenticate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stores/AuthStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/AuthStore.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +67,7 @@
       <workItem from="1589119098922" duration="8568000" />
       <workItem from="1589215385017" duration="5040000" />
       <workItem from="1589297033528" duration="9285000" />
-      <workItem from="1589378871872" duration="4628000" />
+      <workItem from="1589378871872" duration="7093000" />
     </task>
     <servers />
   </component>

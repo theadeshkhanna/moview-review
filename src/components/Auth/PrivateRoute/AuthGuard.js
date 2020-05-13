@@ -6,17 +6,17 @@ const Authenticate = ({component: Component , ...rest}) => {
     return (
         <Route
             {...rest}
-            render={props => {
-                if (isAuthenticated === true) {
-                    return <Component {...props} />
-                } else {
-                    return <Redirect to={{
+            render={props =>
+                isAuthenticated() ? (
+                    <Component {...props} />
+                ) : (
+                    <Redirect to={{
                         pathname: "/sign-in",
                         state: { from: props.location }
                     }} />
-                }
+                )
             }
-        }/>
+        />
     );
 };
 

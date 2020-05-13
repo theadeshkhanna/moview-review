@@ -1,5 +1,6 @@
 import { observable,action } from "mobx";
 import axios from '../axios-instance';
+import {isAuthenticated} from "../components/Auth/PrivateRoute/Authenticate";
 
 class AuthStore {
     @observable name = '';
@@ -7,14 +8,13 @@ class AuthStore {
     @observable password = '';
     @observable auth = false;
     @observable loading = true;
-    @observable loaded = false;
 
-    @action signUp = (props) => {
+    @action signUp = (e, props) => {
 
         const payload = {
-            "name" : this.name,
-            "email" : this.email,
-            "password" : this.password
+            "name" : e.target.name.value,
+            "email" : e.target.email.value,
+            "password" : e.target.password.value
         };
 
         axios.post('/register', payload)
@@ -42,9 +42,9 @@ class AuthStore {
 
                 this.auth = true;
                 this.loading = false;
-                this.loaded = true;
 
                 props.history.push('/dashboard');
+
             }).catch(res => {
                 console.log(res.data);
         });
