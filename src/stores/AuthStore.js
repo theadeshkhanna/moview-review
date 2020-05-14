@@ -1,15 +1,13 @@
 import { observable,action } from "mobx";
 import axios from '../axios-instance';
-import {isAuthenticated} from "../components/Auth/PrivateRoute/Authenticate";
 
 class AuthStore {
-    @observable name = '';
-    @observable email = '';
-    @observable password = '';
     @observable auth = false;
-    @observable loading = true;
+    @observable isloading = null;
 
     @action signUp = (e, props) => {
+        this.isloading = false;
+        e.preventDefault();
 
         const payload = {
             "name" : e.target.name.value,
@@ -19,7 +17,7 @@ class AuthStore {
 
         axios.post('/register', payload)
             .then(res => {
-                this.loading = true;
+                this.isloading = true;
                 props.history.push('/');
             }).catch(res => {
             console.log(res.data);
@@ -27,7 +25,7 @@ class AuthStore {
     };
 
     @action signIn = (e, props) => {
-
+        this.isloading = false;
         e.preventDefault();
 
         const payload = {
@@ -41,7 +39,7 @@ class AuthStore {
                 localStorage.setItem('token', res.data.token);
 
                 this.auth = true;
-                this.loading = false;
+                this.isloading = true;
 
                 props.history.push('/dashboard');
 
@@ -51,6 +49,7 @@ class AuthStore {
     };
 
     @action signOut = (props) => {
+        this.isloading = false;
 
         axios.post('/logout', {}, {
             'headers' : {
@@ -60,7 +59,7 @@ class AuthStore {
             .then(res => {
 
                 this.auth = false;
-                this.loading = false;
+                this.isloading = true;
 
                 props.history.push('/');
 
