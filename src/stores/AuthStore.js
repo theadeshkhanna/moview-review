@@ -2,7 +2,6 @@ import { observable,action } from "mobx";
 import axios from '../axios-instance';
 
 class AuthStore {
-    @observable auth = false;
     @observable isloading = null;
 
     @action signUp = (e, props) => {
@@ -38,7 +37,6 @@ class AuthStore {
 
                 localStorage.setItem('token', res.data.token);
 
-                this.auth = true;
                 this.isloading = true;
 
                 props.history.push('/dashboard');
@@ -58,7 +56,6 @@ class AuthStore {
         })
             .then(res => {
 
-                this.auth = false;
                 this.isloading = true;
 
                 props.history.push('/');

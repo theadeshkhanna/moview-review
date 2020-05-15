@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import classes from './Navigation.css';
 import { withRouter } from "react-router-dom";
 import { observer, inject } from 'mobx-react';
+import {isAuthenticated} from "../Auth/PrivateRoute/Authenticate";
 
 @inject('AuthStore')
 @observer
@@ -12,7 +13,7 @@ class Navigation extends Component {
 
         let navi = null;
 
-        if (this.props.AuthStore.auth) {
+        if (isAuthenticated()) {
             navi = (
                 <ul className={classes.RightNav}>
                     <li onClick={() => this.props.AuthStore.signOut(this.props)}>Sign Out</li>;
