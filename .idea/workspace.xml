@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfec7b3-ce73-488b-8284-d4efbef85333" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/MovieTile/MovieTile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MovieTile/MovieTile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/MovieStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Spinner/Spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Spinner/Spinner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -69,7 +73,7 @@
       <workItem from="1589297033528" duration="9285000" />
       <workItem from="1589378871872" duration="7897000" />
       <workItem from="1589469275364" duration="5612000" />
-      <workItem from="1589552329478" duration="2130000" />
+      <workItem from="1589552329478" duration="7667000" />
     </task>
     <servers />
   </component>
