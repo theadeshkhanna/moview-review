@@ -11,23 +11,14 @@ class SignIn extends Component {
         let signin = null;
 
         if (this.props.AuthStore.isloading === false) {
-            signin = (
-                <div>
-                    <form onSubmit={(e) => this.props.AuthStore.signIn(e, this.props)} className={classes.SignIn}>
-                        <input type="text" placeholder="Email" name="email"/>
-                        <input type="password" placeholder="Password" name="password"/>
-                        <Spinner />
-                        <button>submit</button>
-                    </form>
-                </div>
-            );
+            signin = <Spinner />;
         } else {
             signin = (
                 <div>
                     <form onSubmit={(e) => this.props.AuthStore.signIn(e, this.props)} className={classes.SignIn}>
                         <input type="text" placeholder="Email" name="email"/>
                         <input type="password" placeholder="Password" name="password"/>
-                        <button>submit</button>
+                            <button>submit</button>
                     </form>
                 </div>
             );

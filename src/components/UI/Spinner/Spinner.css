@@ -5,8 +5,8 @@
     height: 10em;
 }
 .Spinner {
-    margin: 50px auto;
-    font-size: 3px;
+    margin: 200px auto;
+    font-size: 4px;
     position: relative;
     text-indent: -9999em;
     border-top: 1.1em solid transparent;
