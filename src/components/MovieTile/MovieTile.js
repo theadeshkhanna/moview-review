@@ -4,7 +4,7 @@ import { toJS } from "mobx";
 const MovieTile = (props) => {
     return (
         <div>
-            <p></p>
+            <img src={toJS(props.movie.Poster)} />
         </div>
     );
 };

@@ -16,6 +16,7 @@ class MovieStore {
 
         axios.post('/fetchMovie', payload)
             .then(res => {
+
                 this.isloading= true;
                 this.movie = res.data;
             }).catch(res => {
