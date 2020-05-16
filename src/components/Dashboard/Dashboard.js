@@ -9,6 +9,8 @@ import Spinner from "../UI/Spinner/Spinner";
 class Dashboard extends Component {
     render() {
 
+        let name = this.props.history.location.search.split('=')[1].replace("%20", " ");
+
         let tile = null;
 
         if (this.props.MovieStore.isloading === false) {
@@ -21,6 +23,7 @@ class Dashboard extends Component {
 
         return (
             <div>
+                <h2 className={classes.Head}>Hey, {name}</h2>
                 <form onSubmit={(e) => this.props.MovieStore.fetchMovie(e)} className={classes.Dashboard}>
                     <input type="text" placeholder="name of movie" name="movie"/>
                     <button>Find</button>
