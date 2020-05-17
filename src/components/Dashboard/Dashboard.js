@@ -7,23 +7,21 @@ import Spinner from "../UI/Spinner/Spinner";
 @inject('MovieStore')
 @observer
 class Dashboard extends Component {
-    render() {
 
-        let name = this.props.history.location.search.split('=')[1].replace("%20", " ");
+    render() {
 
         let tile = null;
 
         if (this.props.MovieStore.isloading === false) {
             tile = <Spinner />
+        } else if (this.props.MovieStore.isloading === true) {
+            tile = <MovieTile movie={this.props.MovieStore.movie}/>
         } else {
-            tile = (
-                <MovieTile movie={this.props.MovieStore.movie}/>
-            );
+            tile = <h2>search something !!</h2>
         }
 
         return (
             <div>
-                <h2 className={classes.Head}>Hey, {name}</h2>
                 <form onSubmit={(e) => this.props.MovieStore.fetchMovie(e)} className={classes.Dashboard}>
                     <input type="text" placeholder="name of movie" name="movie"/>
                     <button>Find</button>

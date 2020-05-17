@@ -39,10 +39,7 @@ class AuthStore {
 
                 this.isloading = true;
 
-                props.history.push({
-                    pathname: '/dashboard',
-                    search: '?name=' + res.data.user.name
-                });
+                props.history.push('/dashboard');
 
             }).catch(res => {
                 console.log(res.data);
