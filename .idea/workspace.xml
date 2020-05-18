@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dfec7b3-ce73-488b-8284-d4efbef85333" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/axios-instance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios-instance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieTile/MovieTile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieTile/MovieTile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/AuthStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/AuthStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/MovieStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/MovieStore.js" afterDir="false" />
-    </list>
+    <list default="true" id="8dfec7b3-ce73-488b-8284-d4efbef85333" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +65,7 @@
       <workItem from="1589469275364" duration="5612000" />
       <workItem from="1589552329478" duration="7667000" />
       <workItem from="1589641157876" duration="6287000" />
-      <workItem from="1589728958592" duration="7452000" />
+      <workItem from="1589728958592" duration="7612000" />
     </task>
     <servers />
   </component>
@@ -88,10 +81,10 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="730" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1589382015013" />
-    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog" timestamp="1589737066068">
+    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog" timestamp="1589815026985">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1589737066068" />
+    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1589815026985" />
     <state x="486" y="174" key="SettingsEditor" timestamp="1588862624761">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
@@ -100,5 +93,9 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="655" y="246" key="run.anything.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1589221006575" />
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1589814772881">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1589814772881" />
   </component>
 </project>
