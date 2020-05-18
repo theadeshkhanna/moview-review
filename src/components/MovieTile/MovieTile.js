@@ -14,7 +14,10 @@ const MovieTile = (props) => {
             <List content={movieObject.Genre.split(", ")}/>
             <List content={movieObject.Actors.split(", ")}/>
             <p>{movieObject.Plot}</p>
-
+            <button>Add Bookmark</button>
+            <br />
+            <br />
+            <br />
         </div>
     );
 };
