@@ -1,4 +1,4 @@
-import { observable,action } from 'mobx-react';
+import { observable,action } from 'mobx';
 import axios from '../axios-instance';
 
 class BookmarkStore {
