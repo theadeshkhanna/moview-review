@@ -16,11 +16,11 @@ class Bookmarks extends Component {
         return (
             <div>
                 <Link to="/dashboard">Back to Dashboard</Link>
-                <p>
+                <div>
                     {
-                        // console.log(toJS(this.props.BookmarkStore.bookmark));
+                        console.log((toJS(this.props.BookmarkStore.bookmark)))
                     }
-                </p>
+                </div>
             </div>
         );
     }

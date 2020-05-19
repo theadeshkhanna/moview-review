@@ -4,7 +4,7 @@ import axios from '../axios-instance';
 class BookmarkStore {
 
     @observable isloading = null;
-    @observable bookmark = [];
+    @observable bookmark = {};
 
     @action AddBookmark = (movieObject) => {
 
