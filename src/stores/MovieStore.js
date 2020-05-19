@@ -14,7 +14,11 @@ class MovieStore {
             "name" : e.target.movie.value
         };
 
-        axios.post('/fetchMovie', payload)
+        axios.post('/fetchMovie', payload, {
+            'headers' : {
+                'Authorization' : 'Bearer ' + localStorage.getItem('token')
+            }
+        })
             .then(res => {
                 this.movie = res.data;
                 this.isloading= true;
