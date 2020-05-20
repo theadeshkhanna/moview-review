@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from "react-router-dom";
 import { observer, inject } from 'mobx-react';
 import Bookmark from "../Bookmark/Bookmark";
 import {toJS} from "mobx";
@@ -22,7 +21,6 @@ class Bookmarks extends Component {
         } else if (this.props.BookmarkStore.isloading === true) {
             tile = (
                 <div>
-                    <Link to="/dashboard">Back to Dashboard</Link>
                     <div>
                         {
                             toJS(this.props.BookmarkStore.bookmark).data.map((item,i) => {

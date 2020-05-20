@@ -3,7 +3,6 @@ import { observer,inject } from "mobx-react";
 import classes from './Dashboard.css';
 import MovieTile from "../MovieTile/MovieTile";
 import Spinner from "../UI/Spinner/Spinner";
-import { Link } from 'react-router-dom';
 
 @inject('MovieStore')
 @observer
@@ -23,7 +22,6 @@ class Dashboard extends Component {
 
         return (
             <div>
-                <Link to="/my-bookmarks">My Bookmarks</Link>
                 <form onSubmit={(e) => this.props.MovieStore.fetchMovie(e)} className={classes.Dashboard}>
                     <input type="text" placeholder="name of movie" name="movie"/>
                     <button>Find</button>
