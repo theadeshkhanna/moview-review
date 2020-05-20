@@ -8,10 +8,19 @@ class MovieStore {
 
     @action fetchMovie = (e) => {
         this.isloading = false;
+
         e.preventDefault();
 
+        let movieName = e.target.movie.value;
+
+        if (movieName.indexOf(' ') >= 0) {
+            movieName = movieName.split(' ').join('+');
+        }
+
+        console.log(movieName);
+
         const payload = {
-            "name" : e.target.movie.value
+            "name" : movieName
         };
 
         axios.post('/fetchMovie', payload, {
