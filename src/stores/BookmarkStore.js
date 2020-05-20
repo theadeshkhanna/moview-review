@@ -1,4 +1,4 @@
-import {observable, action, toJS} from 'mobx';
+import {observable, action} from 'mobx';
 import axios from '../axios-instance';
 
 class BookmarkStore {
@@ -9,11 +9,12 @@ class BookmarkStore {
     @action AddBookmark = (movieObject) => {
 
         const payload = {
-            'rating' : movieObject.imdbRating,
-            'poster' : movieObject.Poster,
-            'title' : movieObject.Title,
+            'rating'  : movieObject.imdbRating,
+            'poster'  : movieObject.Poster,
+            'title'   : movieObject.Title,
             'runtime' : movieObject.Runtime
         };
+
         this.isloading = false;
 
         axios.post('/bookmark', payload, {

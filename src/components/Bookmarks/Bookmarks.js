@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import { observer, inject } from 'mobx-react';
 import Bookmark from "../Bookmark/Bookmark";
 import {toJS} from "mobx";
+import Spinner from "../UI/Spinner/Spinner";
 
 @inject('BookmarkStore')
 @observer
@@ -13,16 +14,27 @@ class Bookmarks extends Component {
     }
 
     render() {
-        return (
-            <div>
-                <Link to="/dashboard">Back to Dashboard</Link>
+
+        let tile = null;
+
+        if (this.props.BookmarkStore.isloading === false) {
+            tile = <Spinner />;
+        } else if (this.props.BookmarkStore.isloading === true) {
+            tile = (
                 <div>
-                    {
-                        console.log((toJS(this.props.BookmarkStore.bookmark)))
-                    }
+                    <Link to="/dashboard">Back to Dashboard</Link>
+                    <div>
+                        {
+                            toJS(this.props.BookmarkStore.bookmark).data.map((item,i) => {
+                                return <Bookmark item={item} key={i}/>
+                            })
+                        }
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        }
+
+        return tile;
     }
 }
 
