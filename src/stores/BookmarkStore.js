@@ -9,7 +9,7 @@ class BookmarkStore {
     @action AddBookmark = (movieObject) => {
 
         const payload = {
-            'imdb_id'  : movieObject.imdbID,
+            'imdb_id' : movieObject.imdbID,
             'rating'  : movieObject.imdbRating,
             'poster'  : movieObject.Poster,
             'title'   : movieObject.Title,

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { observer,inject } from "mobx-react";
 import classes from './Dashboard.css';
-import MovieTile from "../MovieTile/MovieTile";
+import MovieTile from "./MovieTile/MovieTile";
 import Spinner from "../UI/Spinner/Spinner";
 
 @inject('MovieStore')

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
-import Bookmark from "../Bookmark/Bookmark";
+import Bookmark from "./Bookmark/Bookmark";
 import {toJS} from "mobx";
 import Spinner from "../UI/Spinner/Spinner";
 

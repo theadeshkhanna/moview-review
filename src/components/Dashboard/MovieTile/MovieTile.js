@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import { toJS } from "mobx";
-import List from "../UI/List/List";
+import List from "../../UI/List/List";
 import { observer, inject } from 'mobx-react';
-import Spinner from "../UI/Spinner/Spinner";
+import Spinner from "../../UI/Spinner/Spinner";
 
 @inject('BookmarkStore')
 @observer
