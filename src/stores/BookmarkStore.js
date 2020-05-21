@@ -16,6 +16,8 @@ class BookmarkStore {
             'runtime' : movieObject.Runtime
         };
 
+        console.log(payload);
+
         this.isloading = false;
 
         axios.post('/bookmark', payload, {
@@ -41,6 +43,22 @@ class BookmarkStore {
         }).then(res => {
             this.bookmark = res.data;
             this.isloading = true;
+        }).catch(res => {
+            console.log(res.data);
+        });
+    };
+
+    @action DeleteBookmark = (id) => {
+        const payload = {
+            'imdb_id' : id
+        };
+
+        axios.post('delete-bookmark', payload, {
+            'headers' : {
+                'Authorization' : 'Bearer ' + localStorage.getItem('token')
+            }
+        }).then(res => {
+            this.GetBookmarks();
         }).catch(res => {
             console.log(res.data);
         });
