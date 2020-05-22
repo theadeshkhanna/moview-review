@@ -30,7 +30,7 @@ class MovieStore {
         })
             .then(res => {
                 this.movie = res.data;
-                this.isloading= true;
+                this.isloading = true;
             }).catch(res => {
                 console.log(res.data);
         });

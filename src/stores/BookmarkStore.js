@@ -49,6 +49,9 @@ class BookmarkStore {
     };
 
     @action DeleteBookmark = (id) => {
+
+        this.isloading = false;
+
         const payload = {
             'imdb_id' : id
         };
