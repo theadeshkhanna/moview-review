@@ -3,6 +3,7 @@ import { toJS } from "mobx";
 import List from "../../UI/List/List";
 import { observer, inject } from 'mobx-react';
 import Spinner from "../../UI/Spinner/Spinner";
+import classes from './MovieTile.css';
 
 @inject('BookmarkStore')
 @observer
