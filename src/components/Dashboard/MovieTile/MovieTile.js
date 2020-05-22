@@ -23,7 +23,7 @@ class MovieTile extends Component {
                 <div>
                     {console.log(movieObject)}
                     <h2>{movieObject.Title}</h2>
-                    <img src={movieObject.Poster} alt="movie poster" />
+                    <img src={movieObject.Poster} alt="movie poster"/>
                     <List content={movieObject.Genre.split(", ")}/>
                     <List content={movieObject.Actors.split(", ")}/>
                     <p>{movieObject.Plot}</p>
