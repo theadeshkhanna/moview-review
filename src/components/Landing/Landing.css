@@ -1,5 +1,14 @@
 .Landing {
-    background-color: blue;
+    background-image: linear-gradient( to right bottom, rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.6)), url("../../assets/grid.jpg");
     height: 93.9vh;
-    color: #F27B69;
+}
+
+.Head {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 40px;
+    background-color: rgba(152, 165, 168, 0.6);
+    border-radius: 40px;
 }

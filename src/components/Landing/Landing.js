@@ -4,7 +4,9 @@ import classes from './Landing.css';
 const Landing = () => {
     return (
         <div className={classes.Landing}>
-            <h1>Some Heading</h1>
+            <div className={classes.Head}>
+                <h1>What movies you want to search ?</h1>
+            </div>
         </div>
     );
 };
