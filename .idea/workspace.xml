@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfec7b3-ce73-488b-8284-d4efbef85333" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/sign_in.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/axios-instance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios-instance.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Landing/Landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Landing/Landing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Landing/Landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Landing/Landing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +86,7 @@
       <workItem from="1590155587091" duration="7392000" />
       <workItem from="1590167865196" duration="378000" />
       <workItem from="1590335333852" duration="5418000" />
-      <workItem from="1590415271074" duration="5518000" />
+      <workItem from="1590415271074" duration="8480000" />
     </task>
     <servers />
   </component>
@@ -127,10 +122,10 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="730" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1589382015013" />
-    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog" timestamp="1590418143968">
+    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog" timestamp="1590423863093">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1590418143968" />
+    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1590423863093" />
     <state x="486" y="174" key="SettingsEditor" timestamp="1588862624761">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
