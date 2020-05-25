@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfec7b3-ce73-488b-8284-d4efbef85333" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/sign_in.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignIn/SignIn.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +83,7 @@
       <workItem from="1590155587091" duration="7392000" />
       <workItem from="1590167865196" duration="378000" />
       <workItem from="1590335333852" duration="5418000" />
-      <workItem from="1590415271074" duration="8480000" />
+      <workItem from="1590415271074" duration="9408000" />
     </task>
     <servers />
   </component>
