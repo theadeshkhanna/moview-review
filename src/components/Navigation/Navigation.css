@@ -1,5 +1,5 @@
 .Navigation {
-    background-color: #182C61;
+    background-color: #2d4739;
 }
 
 .Nav {
@@ -19,7 +19,13 @@
 
 .LeftNav li a {
     text-decoration: none;
-    color: #F27B69;
+    color: #bcb382;
+    transition: all .2s;
+}
+
+.LeftNav li a:hover {
+    text-decoration: none;
+    color: #e5c687;
 }
 
 .RightNav {
@@ -29,13 +35,25 @@
 .RightNav li {
     list-style: none;
     margin: 25px;
-    color: #F27B69;
+    color: #bcb382;
+    cursor: pointer;
+}
+
+.RightNav li:hover {
+    list-style: none;
+    margin: 25px;
+    color: #e5c687;
     cursor: pointer;
 }
 
 .RightNav li a {
     text-decoration: none;
-    color: #F27B69;
+    color: #bcb382;
+}
+
+.RightNav li a:hover {
+    text-decoration: none;
+    color: #e5c687;
 }
 
 

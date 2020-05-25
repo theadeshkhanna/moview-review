@@ -1,14 +1,48 @@
 .Landing {
-    background-image: linear-gradient( to right bottom, rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.6)), url("../../assets/grid.jpg");
+    background-image: linear-gradient( to right bottom, rgba(45, 71, 57, 0.85), rgba(45, 71, 57, 0.85)), url("../../assets/grid.jpg");
     height: 93.9vh;
 }
 
 .Head {
+    text-align: left;
     position: absolute;
-    top: 35%;
-    left: 50%;
+    top: 40%;
+    left: 40%;
     transform: translate(-50%,-50%);
     padding: 20px 40px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 40px;
+    color: #121619;
+    font-family: inherit;
+    font-size: 30px;
+    background-color: rgba(229, 198, 135, 0.5);
+    border-radius: 20px;
+    transition: all .2s;
+}
+
+.Head:hover {
+    background-color: #bcb382;
+}
+
+.LandButton {
+    position: absolute;
+    top: 40%;
+    left: 0.5%;
+    transform: translate(-50%,-50%);
+    margin: 240px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: rgba(229, 198, 135, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    border-radius: 8px;
+    color: #121619;
+    text-decoration: none;
+}
+
+.LandButton:hover {
+    background-color: #bcb382;
+}
+
+.LandButton:focus {
+    outline: none;
 }
