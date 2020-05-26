@@ -1,16 +1,29 @@
-.Head {
+.Content {
+    margin-top: 100px;
+    align-content: center;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.Search {
+    width: 400px;
+    margin-left: 700px;
+}
+
+.LeftItem {
+    margin-left: 700px;
 }
 
 .Dashboard {
-    margin: 60px;
+    margin-left: -500px;
+    position: fixed;
 }
 
 .Dashboard input {
     display: block;
     margin: 10px auto;
-    width: 30%;
     height: 40px;
+    width: 500px;
     padding-left: 5px;
     border: none;
     border-bottom: 1px solid black;
@@ -24,16 +37,16 @@
     margin-top: 20px;
     font-size: 20px;
     padding: 10px 20px;
-    background-color: #182C61;
+    background-color: #2d4739;
     border: none;
     cursor: pointer;
     transition: all .2s;
     border-radius: 8px;
-    color: white;
+    color: #bcb382;
 }
 
 .Dashboard button:hover {
-    background-color: #192da0;
+    color: #e5c687;
 }
 
 .Dashboard button:focus {

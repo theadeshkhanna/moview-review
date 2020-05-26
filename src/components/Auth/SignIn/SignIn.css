@@ -1,9 +1,5 @@
 .Back {
-    height: 85vh;
-    background-image: url("../../../assets/sign_in.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 800px;
+    width: 400px;
 }
 
 .SignIn {
@@ -42,7 +38,4 @@
 
 .SignIn button:focus {
     outline: none;
-}
-
-.Image {
 }

@@ -13,15 +13,23 @@ class Dashboard extends Component {
         let tile = null;
 
         if (this.props.MovieStore.isloading === false) {
-            tile = <Spinner />
+            tile = (
+                <div className={classes.LeftItem}>
+                    <Spinner />
+                </div>
+            );
         } else if (this.props.MovieStore.isloading === true) {
-            tile = <MovieTile movie={this.props.MovieStore.movie}/>
+            tile = (
+                <div className={classes.LeftItem}>
+                    <MovieTile movie={this.props.MovieStore.movie}/>
+                </div>
+            );
         } else {
-            tile = <h2>search something !!</h2>
+            tile = <img src={require("../../assets/search.png")} alt="search" className={classes.Search}/>
         }
 
         return (
-            <div>
+            <div className={classes.Content}>
                 <form onSubmit={(e) => this.props.MovieStore.fetchMovie(e)} className={classes.Dashboard}>
                     <input type="text" placeholder="name of movie" name="movie"/>
                     <button>Find</button>

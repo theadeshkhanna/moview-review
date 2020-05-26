@@ -14,12 +14,13 @@ class SignIn extends Component {
             signin = <Spinner />;
         } else {
             signin = (
-                <div className={classes.Back}>
+                <div>
                     <form onSubmit={(e) => this.props.AuthStore.signIn(e, this.props)} className={classes.SignIn}>
                         <input type="text" placeholder="Email" name="email"/>
                         <input type="password" placeholder="Password" name="password"/>
                         <button>submit</button>
                     </form>
+                    <img  src={require("../../../assets/sign_in.png")} alt="sign in" className={classes.Back}/>
                 </div>
             );
         }
