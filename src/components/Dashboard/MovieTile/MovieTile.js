@@ -20,7 +20,7 @@ class MovieTile extends Component {
 
         if (this.props.BookmarkStore.isloading === false) {
             tile = (
-                <div>
+                <div className={classes.Tile}>
                     {console.log(movieObject)}
                     <h2>{movieObject.Title}</h2>
                     <img src={movieObject.Poster} alt="movie poster"/>
@@ -35,10 +35,10 @@ class MovieTile extends Component {
             );
         } else {
             tile = (
-                <div>
+                <div className={classes.Tile}>
                     {console.log(movieObject)}
                     <h2>{movieObject.Title}</h2>
-                    <img src={movieObject.Poster} alt="movie poster" />
+                    <img src={movieObject.Poster} alt="movie poster" className={classes.Poster}/>
                     <List content={movieObject.Genre.split(", ")}/>
                     <List content={movieObject.Actors.split(", ")}/>
                     <p>{movieObject.Plot}</p>
