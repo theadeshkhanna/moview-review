@@ -7,6 +7,10 @@ import Spinner from "../../UI/Spinner/Spinner";
 @observer
 class SignUp extends Component {
 
+    HandleGoogle = () => {
+        this.props.AuthStore.GoogleOauth();
+    };
+
     render() {
 
         let signup = null;
@@ -22,6 +26,7 @@ class SignUp extends Component {
                         <input type="password" placeholder="Password" name="password"/>
                         <button>submit</button>
                     </form>
+                    <button onClick={this.HandleGoogle}>Google</button>
                 </div>
             );
         }

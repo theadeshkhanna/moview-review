@@ -3,6 +3,7 @@ import axios from '../axios-instance';
 
 class AuthStore {
     @observable isloading = null;
+    @observable code = null;
 
     @action signUp = (e, props) => {
         this.isloading = false;
@@ -66,6 +67,15 @@ class AuthStore {
 
         localStorage.removeItem('token');
     };
+
+    @action GoogleOauth = () => {
+        axios.get('/oauth/google')
+            .then(res=> {
+                console.log(res.data);
+            }).catch(res=> {
+            console.log(res.data);
+        });
+    }
 
 }
 
