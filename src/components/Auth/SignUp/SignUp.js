@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import classes from './SignUp.css';
 import { observer, inject } from 'mobx-react';
 import Spinner from "../../UI/Spinner/Spinner";
-import GoogleBtn from "../GoogleLogin/GoogleLogin";
 
 @inject('AuthStore')
 @observer
