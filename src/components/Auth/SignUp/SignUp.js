@@ -23,7 +23,6 @@ class SignUp extends Component {
                         <input type="password" placeholder="Password" name="password"/>
                         <button>submit</button>
                     </form>
-                    <GoogleBtn />
                 </div>
             );
         }
