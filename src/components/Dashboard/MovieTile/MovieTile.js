@@ -20,32 +20,27 @@ class MovieTile extends Component {
 
         if (this.props.BookmarkStore.isloading === false) {
             tile = (
-                <div className={classes.Tile}>
-                    {console.log(movieObject)}
-                    <h2>{movieObject.Title}</h2>
-                    <img src={movieObject.Poster} alt="movie poster"/>
-                    <List content={movieObject.Genre.split(", ")}/>
-                    <List content={movieObject.Actors.split(", ")}/>
-                    <p>{movieObject.Plot}</p>
-                    <Spinner />
-                    <br />
-                    <br />
-                    <br />
-                </div>
+                <Spinner />
             );
         } else {
             tile = (
                 <div className={classes.Tile}>
-                    {console.log(movieObject)}
-                    <h2>{movieObject.Title}</h2>
-                    <img src={movieObject.Poster} alt="movie poster" className={classes.Poster}/>
-                    <List content={movieObject.Genre.split(", ")}/>
-                    <List content={movieObject.Actors.split(", ")}/>
-                    <p>{movieObject.Plot}</p>
-                    <button onClick={() => this.AddBookmarkHandler(movieObject)}>Add Bookmark</button>
-                    <br />
-                    <br />
-                    <br />
+                    <div className={classes.Left}>
+                        <h2 className={classes.Head}>{movieObject.Title}</h2>
+                        <div className={classes.Small}>
+                            <p>Runtime: {movieObject.Runtime}</p>
+                            <p>ImdbRating: {movieObject.imdbRating}/10</p>
+                        </div>
+                        <List content={movieObject.Genre.split(", ")}/>
+                        <List content={movieObject.Actors.split(", ")}/>
+                        <div className={classes.Big}>
+                            <p>{movieObject.Plot}</p>
+                        </div>
+                        <button onClick={() => this.AddBookmarkHandler(movieObject)} className={classes.Submit}>Add To WatchList</button>
+                    </div>
+                    <div className={classes.Right}>
+                        <img src={movieObject.Poster} alt="movie poster" className={classes.Poster}/>
+                    </div>
                 </div>
             );
         }

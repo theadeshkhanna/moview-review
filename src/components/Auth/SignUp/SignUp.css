@@ -42,3 +42,7 @@
 .SignUp button:focus {
     outline: none;
 }
+
+.Back {
+    width: 400px;
+}

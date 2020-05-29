@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfec7b3-ce73-488b-8284-d4efbef85333" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/about.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/sign_up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/About.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/About.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/KnowTheDeveloper/KnowTheDeveloper.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/KnowTheDeveloper/KnowTheDeveloper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/axios-instance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios-instance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Layout/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/MovieTile/MovieTile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/MovieTile/MovieTile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/MovieTile/MovieTile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/MovieTile/MovieTile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/List/List.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/List/List.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +93,7 @@
       <workItem from="1590522166955" duration="8544000" />
       <workItem from="1590586277131" duration="7678000" />
       <workItem from="1590694085560" duration="7403000" />
-      <workItem from="1590760539963" duration="4657000" />
+      <workItem from="1590760539963" duration="7867000" />
     </task>
     <servers />
   </component>

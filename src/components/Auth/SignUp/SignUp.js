@@ -22,6 +22,7 @@ class SignUp extends Component {
                         <input type="password" placeholder="Password" name="password"/>
                         <button>submit</button>
                     </form>
+                    <img  src={require("../../../assets/sign_up.png")} alt="sign in" className={classes.Back}/>
                 </div>
             );
         }

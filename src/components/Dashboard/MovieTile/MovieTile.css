@@ -1,3 +1,48 @@
+.Tile {
+    display: flex;
+    margin-left: 300px;
+    margin-right: 20px;
+    padding: 50px;
+}
+
+.Head {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.Small {
+    padding: 10px;
+    margin: 0 200px 0 200px;
+    background-color: rgba(188, 179, 130, 0.75);
+    border-radius: 20px;
+}
+
+.Big {
+    padding: 10px;
+    background-color: rgba(188, 179, 130, 0.75);
+    border-radius: 20px;
+}
+
+.Right {
+    margin-left: 20px;
+}
+
 .Poster {
-    width: 350px;
+    border-radius: 20px;
+}
+
+.Submit {
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: #2d4739;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    border-radius: 8px;
+    color: #bcb382;
+}
+
+.Submit:hover {
+    color: #e5c687;
 }
