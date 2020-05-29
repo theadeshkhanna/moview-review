@@ -3,6 +3,7 @@ import { observer, inject } from 'mobx-react';
 import Bookmark from "./Bookmark/Bookmark";
 import {toJS} from "mobx";
 import Spinner from "../UI/Spinner/Spinner";
+import classes from './Bookmarks.css';
 
 @inject('BookmarkStore')
 @observer
@@ -20,14 +21,12 @@ class Bookmarks extends Component {
             tile = <Spinner />;
         } else if (this.props.BookmarkStore.isloading === true) {
             tile = (
-                <div>
-                    <div>
-                        {
-                            toJS(this.props.BookmarkStore.bookmark).data.map((item,i) => {
-                                return <Bookmark item={item} key={i}/>
-                            })
-                        }
-                    </div>
+                <div className={classes.TotalLists}>
+                    {
+                        toJS(this.props.BookmarkStore.bookmark).data.map((item,i) => {
+                            return <Bookmark item={item} key={i}/>
+                        })
+                    }
                 </div>
             );
         }
