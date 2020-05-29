@@ -8,6 +8,8 @@ import { observer, inject } from 'mobx-react';
 import SignUp from "../../components/Auth/SignUp/SignUp";
 import Authenticate from "../../components/Auth/PrivateRoute/AuthGuard";
 import Bookmarks from "../../components/Bookmarks/Bookmarks";
+import KnowTheDeveloper from "../../components/KnowTheDeveloper/KnowTheDeveloper";
+import About from "../../components/About/About";
 
 @inject('AuthStore')
 @observer
@@ -22,6 +24,8 @@ class Layout extends Component {
                     <Route path="/" exact component={Landing} />
                     <Route path="/sign-in" exact component={SignIn} />
                     <Route path="/sign-up" exact component={SignUp} />
+                    <Route path="/about" exact component={About} />
+                    <Route path="/know-the-developer" exact component={KnowTheDeveloper} />
                     <Authenticate path="/dashboard" exact component={Dashboard} />
                     <Authenticate path="/my-bookmarks" exact component={Bookmarks} />
                 </Switch>

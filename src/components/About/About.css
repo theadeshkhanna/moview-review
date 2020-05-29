@@ -1,0 +1,78 @@
+.About {
+    margin: 100px auto;
+}
+
+.Content {
+    margin: 0 300px 60px 300px;
+    padding: 40px;
+}
+
+.Hi {
+    display: block;
+    font-size: 55px;
+}
+
+.React {
+    font-size: 35px;
+}
+
+.React a {
+    text-decoration: none;
+    color: #61DBFB;
+    transition: all .2s;
+}
+
+.React a:hover {
+    color: #4d7c9a;
+}
+
+.Laravel {
+    font-size: 35px;
+}
+
+.Laravel a {
+    text-decoration: none;
+    color: #F05340;
+    transition: all .2s;
+}
+
+.Laravel a:hover {
+    color: #90382a;
+}
+
+.Mobx {
+    font-size: 35px;
+}
+
+.Mobx a {
+    text-decoration: none;
+    color: #025193;
+    transition: all .2s;
+}
+
+.Mobx a:hover {
+    color: #021c37;
+}
+
+.Omdb {
+    font-size: 35px;
+}
+
+.Omdb a {
+    text-decoration: none;
+    color: #333333;
+    transition: all .2s;
+}
+
+.Omdb a:hover {
+    color: #191919;
+}
+
+.Content p {
+    text-align: left;
+    font-size: 30px;
+}
+
+.Image {
+    width: 400px;
+}
