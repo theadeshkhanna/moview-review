@@ -29,6 +29,8 @@ class Bookmarks extends Component {
                     }
                 </div>
             );
+        } else {
+            tile = <Spinner />;
         }
 
         return tile;

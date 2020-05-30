@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfec7b3-ce73-488b-8284-d4efbef85333" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Bookmarks/Bookmark/Bookmark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Bookmarks/Bookmarks.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/axios-instance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios-instance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Bookmarks/Bookmark/Bookmark.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Bookmarks/Bookmark/Bookmark.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Bookmarks/Bookmark/Bookmark.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Bookmarks/Bookmark/Bookmark.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Bookmarks/Bookmarks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Bookmarks/Bookmarks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/List/List.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/List/List.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +93,8 @@
       <workItem from="1590522166955" duration="8544000" />
       <workItem from="1590586277131" duration="7678000" />
       <workItem from="1590694085560" duration="7403000" />
-      <workItem from="1590760539963" duration="10597000" />
+      <workItem from="1590760539963" duration="10775000" />
+      <workItem from="1590848230545" duration="2328000" />
     </task>
     <servers />
   </component>

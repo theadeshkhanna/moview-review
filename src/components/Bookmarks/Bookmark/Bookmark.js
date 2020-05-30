@@ -17,9 +17,11 @@ class Bookmark extends Component {
                     <img src={this.props.item.poster} alt="movie poster" className={classes.Photo}/>
                 </div>
                 <div className={classes.Last}>
-                    <p>{this.props.item.title}</p>
-                    <p>Runtime: {this.props.item.runtime}</p>
-                    <p>ImdbRating: {this.props.item.rating}/10</p>
+                    <p className={classes.Head}>{this.props.item.title}</p>
+                    <div className={classes.Detail}>
+                        <p>Runtime: {this.props.item.runtime}</p>
+                        <p>ImdbRating: {this.props.item.rating}/10</p>
+                    </div>
                     <button onClick={() => this.handleBookmarkDelete(this.props.item.imdb_id)} className={classes.Del}>Delete</button>
                 </div>
             </div>

@@ -1,8 +1,18 @@
 .TotalList {
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
-    flex: 1 0 35%;
+    margin-bottom: 60px;
+    flex: 0 1 25%;
+}
+
+.Head {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Detail {
+    padding: 10px;
+    background-color: rgba(188, 179, 130, 0.25);
 }
 
 .Last {
