@@ -5,6 +5,10 @@
     padding: 50px;
 }
 
+.Error {
+    color: indianred;
+}
+
 .Head {
     font-size: 30px;
     margin-bottom: 20px;

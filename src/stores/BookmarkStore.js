@@ -5,6 +5,7 @@ class BookmarkStore {
 
     @observable isloading = null;
     @observable bookmark = {};
+    @observable error = null;
 
     @action AddBookmark = (movieObject) => {
 
@@ -28,7 +29,8 @@ class BookmarkStore {
                 this.isloading = true;
                 console.log(res.data);
             }).catch(res => {
-                console.log(res.data);
+                this.error = res.message;
+                this.isloading = true;
         });
     };
 
