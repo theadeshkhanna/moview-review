@@ -1,5 +1,10 @@
 .Back {
+    margin-top: 20px;
     width: 450px;
+}
+
+.Error {
+    color: #c20000;
 }
 
 .SignIn {

@@ -3,6 +3,7 @@ import axios from '../axios-instance';
 
 class AuthStore {
     @observable isloading = null;
+    @observable error = null;
 
     @action signUp = (e, props) => {
         this.isloading = false;
@@ -23,18 +24,11 @@ class AuthStore {
         });
     };
 
-    @action signIn = (e, props) => {
+    @action signIn = (payload, props) => {
         this.isloading = false;
-        e.preventDefault();
-
-        const payload = {
-          "email" : e.target.email.value,
-          "password" : e.target.password.value
-        };
 
         axios.post('/login', payload)
             .then(res => {
-
                 localStorage.setItem('token', res.data.token);
 
                 this.isloading = true;
@@ -42,7 +36,8 @@ class AuthStore {
                 props.history.push('/dashboard');
 
             }).catch(res => {
-                console.log(res.data);
+                this.isloading = true;
+                this.error = res.response.data.message;
         });
     };
 
