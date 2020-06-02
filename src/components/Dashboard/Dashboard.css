@@ -5,6 +5,10 @@
     justify-content: space-evenly;
 }
 
+.Error {
+    color: indianred;
+}
+
 .Search {
     width: 400px;
     margin-left: 500px;

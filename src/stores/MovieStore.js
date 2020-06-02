@@ -3,36 +3,23 @@ import axios from '../axios-instance';
 
 class MovieStore {
 
-    @observable movie = {};
+    @observable movie = null;
     @observable isloading = null;
+    @observable error = null;
 
-    @action fetchMovie = (e) => {
+    @action fetchMovie = (payload) => {
         this.isloading = false;
-
-        e.preventDefault();
-
-        let movieName = e.target.movie.value;
-
-        if (movieName.indexOf(' ') >= 0) {
-            movieName = movieName.split(' ').join('+');
-        }
-
-        console.log(movieName);
-
-        const payload = {
-            "name" : movieName
-        };
 
         axios.post('/fetchMovie', payload, {
             'headers' : {
                 'Authorization' : 'Bearer ' + localStorage.getItem('token')
             }
-        })
-            .then(res => {
+        }).then(res => {
                 this.movie = res.data;
                 this.isloading = true;
             }).catch(res => {
-                console.log(res.data);
+                this.isloading = true;
+                this.error = res.response.data.message;
         });
     }
 }
