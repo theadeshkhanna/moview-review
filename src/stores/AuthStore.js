@@ -5,22 +5,16 @@ class AuthStore {
     @observable isloading = null;
     @observable error = null;
 
-    @action signUp = (e, props) => {
+    @action signUp = (payload, props) => {
         this.isloading = false;
-        e.preventDefault();
-
-        const payload = {
-            "name" : e.target.name.value,
-            "email" : e.target.email.value,
-            "password" : e.target.password.value
-        };
 
         axios.post('/register', payload)
             .then(res => {
                 this.isloading = true;
                 props.history.push('/');
             }).catch(res => {
-            console.log(res.data);
+            this.isloading = true;
+            this.error = res.response.data.message;
         });
     };
 

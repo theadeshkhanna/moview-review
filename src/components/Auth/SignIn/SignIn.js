@@ -37,7 +37,7 @@ class SignIn extends Component {
         let signin = null;
 
         if (this.props.AuthStore.isloading === false) {
-            signin = <Spinner />;
+            signin = <div className={classes.Centre}><Spinner /></div>;
         } else {
             signin = (
                 <div>
