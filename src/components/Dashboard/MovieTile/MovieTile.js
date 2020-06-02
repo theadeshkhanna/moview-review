@@ -41,7 +41,11 @@ class MovieTile extends Component {
                             <div className={classes.Big}>
                                 <p>{movieObject.Plot}</p>
                             </div>
-                            <button onClick={() => this.AddBookmarkHandler(movieObject)} className={classes.Submit}>Add To WatchList</button>
+                            {
+                                this.props.bookmarked ?
+                                <button className={classes.Disabled} disabled>Added to Wishlist</button> :
+                                <button onClick={() => this.AddBookmarkHandler(movieObject)} className={classes.Submit}>Add To WatchList</button>
+                            }
                         </div>
                         <div className={classes.Right}>
                             <img src={movieObject.Poster} alt="movie poster" className={classes.Poster}/>

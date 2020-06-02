@@ -17,8 +17,6 @@ class BookmarkStore {
             'runtime' : movieObject.Runtime
         };
 
-        console.log(payload);
-
         this.isloading = false;
 
         axios.post('/bookmark', payload, {
@@ -27,7 +25,6 @@ class BookmarkStore {
             }
         }).then(res => {
                 this.isloading = true;
-                console.log(res.data);
             }).catch(res => {
                 this.error = res.message;
                 this.isloading = true;

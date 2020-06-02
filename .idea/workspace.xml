@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8dfec7b3-ce73-488b-8284-d4efbef85333" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/SignUp/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/AuthStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/AuthStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/MovieTile/MovieTile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/MovieTile/MovieTile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/MovieTile/MovieTile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/MovieTile/MovieTile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/BookmarkStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/BookmarkStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/MovieStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/MovieStore.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +97,7 @@
       <workItem from="1590848230545" duration="6259000" />
       <workItem from="1591020089296" duration="1514000" />
       <workItem from="1591024124523" duration="6421000" />
-      <workItem from="1591107541321" duration="5820000" />
+      <workItem from="1591107541321" duration="8210000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,7 @@ class MovieStore {
     @observable movie = null;
     @observable isloading = null;
     @observable error = null;
+    @observable bookmarked = null;
 
     @action fetchMovie = (payload) => {
         this.isloading = false;
@@ -15,7 +16,8 @@ class MovieStore {
                 'Authorization' : 'Bearer ' + localStorage.getItem('token')
             }
         }).then(res => {
-                this.movie = res.data;
+                this.movie = res.data.response;
+                this.bookmarked = res.data.bookmarked;
                 this.isloading = true;
             }).catch(res => {
                 this.isloading = true;

@@ -58,7 +58,7 @@ class Dashboard extends Component {
             } else {
                 tile = (
                     <div className={classes.LeftItem}>
-                        <MovieTile movie={this.props.MovieStore.movie}/>
+                        <MovieTile movie={this.props.MovieStore.movie} bookmarked={this.props.MovieStore.bookmarked}/>
                     </div>
                 );
             }
