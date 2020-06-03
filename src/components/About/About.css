@@ -7,13 +7,8 @@
     padding: 40px;
 }
 
-.Hi {
-    display: block;
-    font-size: 55px;
-}
-
 .React {
-    font-size: 35px;
+    font-size: 23px;
 }
 
 .React a {
@@ -27,7 +22,7 @@
 }
 
 .Laravel {
-    font-size: 35px;
+    font-size: 23px;
 }
 
 .Laravel a {
@@ -41,7 +36,7 @@
 }
 
 .Mobx {
-    font-size: 35px;
+    font-size: 23px;
 }
 
 .Mobx a {
@@ -55,7 +50,7 @@
 }
 
 .Omdb {
-    font-size: 35px;
+    font-size: 23px;
 }
 
 .Omdb a {
@@ -69,8 +64,8 @@
 }
 
 .Content p {
-    text-align: left;
-    font-size: 30px;
+    line-height: 1.5;
+    font-size: 20px;
 }
 
 .Image {

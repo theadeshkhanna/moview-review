@@ -4,9 +4,9 @@ import classes from './About.css';
 const About = () => {
   return (
       <div className={classes.About}>
+          <img src={require('../../assets/about.png')} alt="about" className={classes.Image}/>
           <div className={classes.Content}>
               <p>
-                  <span className={classes.Hi}>Hi,</span>
                   This is currently the first version of MovieReview App.
               </p>
               <p>
@@ -22,7 +22,6 @@ const About = () => {
                   <span className={classes.Omdb}><a href="http://www.omdbapi.com/" target="_blank"> omdb api</a></span>.
               </p>
           </div>
-          <img src={require('../../assets/about.png')} alt="about" className={classes.Image}/>
       </div>
   );
 };

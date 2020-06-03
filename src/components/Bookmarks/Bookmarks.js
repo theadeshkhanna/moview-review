@@ -18,7 +18,7 @@ class Bookmarks extends Component {
         let tile = null;
 
         if (this.props.BookmarkStore.isloading === false) {
-            tile = <Spinner />;
+            tile = <div className={classes.Centre}><Spinner /></div>;
         } else if (this.props.BookmarkStore.isloading === true) {
             tile = (
                 <div className={classes.TotalLists}>
@@ -30,7 +30,7 @@ class Bookmarks extends Component {
                 </div>
             );
         } else {
-            tile = <Spinner />;
+            tile = <div className={classes.Centre}><Spinner /></div>;
         }
 
         return tile;
