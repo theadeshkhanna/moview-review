@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfec7b3-ce73-488b-8284-d4efbef85333" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/logo-facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo-instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo-linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo-stackoverflow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/me.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/MovieTile/MovieTile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/MovieTile/MovieTile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/MovieTile/MovieTile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/MovieTile/MovieTile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/BookmarkStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/BookmarkStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/MovieStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/MovieStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/axios-instance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios-instance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/KnowTheDeveloper/KnowTheDeveloper.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/KnowTheDeveloper/KnowTheDeveloper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/KnowTheDeveloper/KnowTheDeveloper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/KnowTheDeveloper/KnowTheDeveloper.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +100,8 @@
       <workItem from="1590848230545" duration="6259000" />
       <workItem from="1591020089296" duration="1514000" />
       <workItem from="1591024124523" duration="6421000" />
-      <workItem from="1591107541321" duration="8210000" />
+      <workItem from="1591107541321" duration="8397000" />
+      <workItem from="1591192480180" duration="5248000" />
     </task>
     <servers />
   </component>
@@ -133,10 +137,10 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="730" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1589382015013" />
-    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog" timestamp="1591031436737">
+    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog" timestamp="1591193369947">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1591031436737" />
+    <state x="164" y="96" width="1657" height="885" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1591193369947" />
     <state x="486" y="174" key="SettingsEditor" timestamp="1588862624761">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
