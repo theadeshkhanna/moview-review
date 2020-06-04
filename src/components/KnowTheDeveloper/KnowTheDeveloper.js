@@ -11,19 +11,20 @@ const KnowTheDeveloper = () => {
             <p className={classes.Intro}>some of my skills are - </p>
             <br />
             <ul className={classes.Skills}>
-                <li>ReactJS</li>
-                <li>NodeJS</li>
-                <li>Laravel</li>
-                <li>Flutter</li>
-                <li>Adobe After effects</li>
+                <li className={classes.RJs}>ReactJS</li>
+                <li className={classes.NJs}>NodeJS</li>
+                <li className={classes.Lara}>Laravel</li>
+                <li className={classes.Flut}>Flutter</li>
+                <li className={classes.Ae}>Adobe After effects</li>
             </ul>
             <br />
             <p className={classes.Intro}>catch me on - </p>
             <ul className={classes.Social}>
-                <li><a href="#"></a><img src={require("../../assets/logo-facebook.svg")}/></li>
-                <li><a href="#"></a><img src={require("../../assets/logo-instagram.svg")}/></li>
-                <li><a href="#"></a><img src={require("../../assets/logo-linkedin.svg")}/></li>
-                <li><a href="#"></a><img src={require("../../assets/logo-stackoverflow.svg")}/></li>
+                <li className={classes.Facebook}><a href="https://www.facebook.com/profile.php?id=100005620998347"><img src={require("../../assets/logo-facebook.svg")}/></a></li>
+                <li className={classes.Instagram}><a href="https://www.instagram.com/the_adesh_khanna/"><img src={require("../../assets/logo-instagram.svg")}/></a></li>
+                <li className={classes.Linkedin}><a href="https://www.linkedin.com/in/adesh-khanna-66060216b"><img src={require("../../assets/logo-linkedin.svg")}/></a></li>
+                <li className={classes.Stackoverflow}><a href="https://stackoverflow.com/users/11675539/adesh-khanna?tab=profile"><img src={require("../../assets/logo-stackoverflow.svg")}/></a></li>
+                <li className={classes.Github}><a href="https://github.com/theadeshkhanna"><img src={require("../../assets/logo-github.svg")}/></a></li>
             </ul>
         </div>
     );

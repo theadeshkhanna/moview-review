@@ -16,7 +16,49 @@
 
 .Skills li {
     list-style: none;
-    margin: 20px;
+    margin: 5px;
+    padding: 10px 20px;
+    transition: all .2s;
+}
+
+.RJs:hover {
+    cursor: default;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #61DBFB;
+    color: white;
+}
+
+.NJs:hover {
+    cursor: default;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #79b462;
+    color: white;
+}
+
+.Lara:hover {
+    cursor: default;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #F05340;
+    color: white;
+}
+
+.Flut:hover {
+    cursor: default;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #075b9a;
+    color: white;
+}
+
+.Ae:hover {
+    cursor: default;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #211840;
+    color: white;
 }
 
 .Social {
@@ -30,5 +72,29 @@
 }
 
 .Social img {
-    width: 50px;
+    width: 40px;
+}
+
+.Social a {
+    transition: all .2s;
+}
+
+.Facebook a:hover {
+    filter: invert(33%) sepia(10%) saturate(3344%) hue-rotate(183deg) brightness(95%) contrast(86%);
+}
+
+.Instagram a:hover {
+    filter: invert(23%) sepia(74%) saturate(2044%) hue-rotate(261deg) brightness(89%) contrast(92%);
+}
+
+.Linkedin a:hover {
+    filter: invert(28%) sepia(48%) saturate(3321%) hue-rotate(179deg) brightness(92%) contrast(89%);
+}
+
+.Stackoverflow a:hover {
+    filter: invert(74%) sepia(95%) saturate(3058%) hue-rotate(335deg) brightness(96%) contrast(95%);
+}
+
+.Github a:hover {
+    filter: invert(12%) sepia(60%) saturate(0%) hue-rotate(158deg) brightness(97%) contrast(81%);
 }
