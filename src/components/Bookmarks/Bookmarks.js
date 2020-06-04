@@ -20,15 +20,25 @@ class Bookmarks extends Component {
         if (this.props.BookmarkStore.isloading === false) {
             tile = <div className={classes.Centre}><Spinner /></div>;
         } else if (this.props.BookmarkStore.isloading === true) {
-            tile = (
-                <div className={classes.TotalLists}>
-                    {
-                        toJS(this.props.BookmarkStore.bookmark).data.map((item,i) => {
-                            return <Bookmark item={item} key={i}/>
-                        })
-                    }
-                </div>
-            );
+
+            if (toJS(this.props.BookmarkStore.bookmark).data.length === 0) {
+                tile = (
+                    <div>
+                        <img className={classes.Empty} src={require("../../assets/bookmark.png")}/>
+                        <p className={classes.Text}> you don't have any bookmarks</p>
+                    </div>
+                );
+            } else {
+                tile = (
+                    <div className={classes.TotalLists}>
+                        {
+                            toJS(this.props.BookmarkStore.bookmark).data.map((item,i) => {
+                                return <Bookmark item={item} key={i}/>
+                            })
+                        }
+                    </div>
+                );
+            }
         } else {
             tile = <div className={classes.Centre}><Spinner /></div>;
         }

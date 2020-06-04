@@ -8,3 +8,14 @@
 .Centre {
     margin: 250px 800px;
 }
+
+.Empty {
+    margin: 200px auto;
+    width: 300px;
+}
+
+.Text {
+    margin-top: -165px;
+    color: #2d4739;
+    font-size: 18px;
+}
